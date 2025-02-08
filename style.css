@@ -1,0 +1,125 @@
+@font-face{
+    font-family: "fraunces";
+    src: url(Fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+
+    font-family: "montserrat";
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+   background-color: hsl(30, 38%, 92%);
+   height: 100vh;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#container{
+    background-color: white;
+    border-radius: 10px;
+    height: 600px;
+    width: 350px;
+    overflow: hidden;
+}
+
+#container #productImage{
+    text-align: center;
+}
+
+#container #productImage img{
+    height: 35%;
+    width: 100%;
+}
+
+#container #descrption{
+    padding: 5px 15px 15px 15px;
+}
+
+#container #descrption pre{
+    color: gray;
+    font-family: "montserrat";
+    font-weight: 500;
+}
+
+#container #descrption h1{
+    font-family: "fraunces";
+    margin-top: -10px;
+}
+
+#container #descrption p{
+    color: gray;
+    font-family: "montserrat";
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+#container #descrption #discountPrice{
+    color: hsl(158, 36%, 37%);
+    font-family: "fraunces";
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+#container #descrption #initialPrice{
+    padding: 0px 0px 0px 10px;
+    font-size: medium;
+    text-decoration: line-through;
+    color: gray;
+    font-family: "montserrat";
+    font-weight: 500;
+}
+
+#container #descrption button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: "montserrat";
+    font-weight: 700;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 320px;
+    height: 50px;
+}
+
+#container #descrption button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+#container #descrption button img{
+    padding-right: 10px;
+}
+
+@media (min-width: 48em) {
+    #container{
+        display: flex;
+        flex-direction: row;
+        height: 420px;
+        width: 550px;
+    }
+
+    #container #productImage img{
+        content: url(images/image-product-desktop.jpg);
+        height: 100%;
+        width: 280px;
+    }
+
+    #container #descrption{
+        padding: 5px 15px 15px 15px;
+        width: 265px;
+        height: 100%;
+    }
+    
+    #container #descrption h1{
+        margin-top: 10px;
+        width: 200px;
+    }
+    
+    #container #descrption p{
+        width: 250px;
+    }
+    
+    #container #descrption button{
+        width: 230px;
+    }
+}
